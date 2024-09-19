@@ -1,0 +1,61 @@
+@charset "utf-8";
+/* THe CSS box sizing property allows us to in clude the padding and
+ border in an element's total width and height, add this rule to your 'reset .css'*/
+*{
+    margin-left: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    
+}
+
+/* Basic page container */
+
+.container{
+    width: min(100% - 30px,1080px);
+    margin-inline: auto;
+}
+
+
+div{
+    position: relative;
+    margin-top: 60px;
+    height: 500px;
+    background-color: #00f79c;
+}
+
+div::before{
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    width: 150px;
+    height: 150px;
+    content:"";
+    background-color: #f79c00;
+    
+    animation: rotate 2s linear infinite;
+
+  
+}
+
+@keyframes rotate {
+    from{
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    to{
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+    
+}
+
+div::after{
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    width: 150px;
+    height: 150px;
+    content:"";
+    background-color: #b63e1a;
+    animation: rotate 4s linear infinite;
+    
+}
+
