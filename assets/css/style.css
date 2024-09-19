@@ -5,7 +5,6 @@
     margin-left: 0px;
     padding: 0px;
     box-sizing: border-box;
-    
 }
 
 /* Basic page container */
@@ -31,10 +30,7 @@ div::before{
     height: 150px;
     content:"";
     background-color: #f79c00;
-    
     animation: rotate 2s linear infinite;
-
-  
 }
 
 @keyframes rotate {
